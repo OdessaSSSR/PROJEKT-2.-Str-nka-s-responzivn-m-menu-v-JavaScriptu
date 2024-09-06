@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <header>
+      <!----------------------- Navigace ---------------------->
+      <nav>
+        <ul>
+          <li><a href="/index.html">Domů</a></li>
+          <li><a class="new" href="index.html">Napiš mi ještě</a></li>
+          <li><a href="/Císařovy nové šaty/index.html">E-shop</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-----------------------------E-mail form ---------------------->
+
+    <section class="email-form">
+      <article>
+        <h1>Napiš dopis Harry Potterovi</h1>
+        <form id="form">
+          <div class="input-box">
+            <input type="text" class="email" placeholder="Zadejte svůj email" />
+            <span class="text"></span>
+            <textarea
+              name="message"
+              id="text-field"
+              class="letter"
+              placeholder="Napiš zprávu"
+            ></textarea>
+            <span class="after-sending"></span>
+            <button class="send">Odeslat</button>
+          </div>
+        </form>
+      </article>
+
+      <!---------------------------- Odpověd' na dopis ----------------------------->
+
+      <div class="reply">
+        <container class="envelope">
+          <p class="alert">
+            MILÝ FANOUŠKU,<br /><br />
+            Děkují moc za tvou pozornost k mým dobrodružstvím. <br />
+            Dobře se uč, nezlob rodiče a učitelé. Čti více knih. <br />
+            Všem kouzlům se naučíš v naší
+            <a href="https://engeto.cz/" target="_blank">Academie</a>.<br />
+            .<br /><br />Tvůj HP (Hewlett Paccard to není). <br /><br />
+            P.S. Přestaň konečně číst jenom o mně:<br />
+            zkus například tuto knihu:
+            <a
+              href="https://pdfcoffee.com/susanna-clarke-jonathan-strange-a-pan-norrell-pdf-pdf-free.html"
+              target="_blank"
+              >"Jonathan Strange and Mr Norrell".</a
+            >
+          </p>
+        </container>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

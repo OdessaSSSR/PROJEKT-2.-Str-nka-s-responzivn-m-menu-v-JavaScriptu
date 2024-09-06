@@ -1,0 +1,155 @@
+/* -------  General -------*/
+@font-face {
+  font-family: "Parry Hotter";
+  src: url("ParryHotter.eot");
+  src: local("Parry Hotter Regular"), local("ParryHotter"),
+    url("ParryHotter.eot?#iefix") format("embedded-opentype"),
+    url("ParryHotter.woff") format("woff"),
+    url("ParryHotter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Harry P, Parry Hotter;
+}
+/* ---------  Header ----------  */
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #15304c;
+  height: 50px;
+}
+/* -------- Navigace ---------- */
+
+nav {
+  margin: auto;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+a:hover {
+  font-size: 30px;
+  color: aquamarine;
+  transition: 2s;
+}
+.new {
+  display: none;
+  color: red;
+  font-size: 34px;
+}
+
+/*------------- E-mail form -----------*/
+
+.email-form {
+  position: relative;
+  background-image: url(/img/background.webp);
+  /* background-size: cover;
+  background-position: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.email-form h1 {
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: #f9f9f9;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.email-form .email {
+  width: 290px;
+  background: #292929;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  font-style: 25px;
+
+  margin: auto;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.letter {
+  padding-bottom: 120px;
+  margin: 10px;
+  margin-top: 20px;
+  width: 290px;
+  border-radius: 6px;
+  background: #292929;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.send {
+  color: rgb(195, 9, 9) !important;
+  background-color: rgb(114, 199, 114);
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 10%;
+  margin: auto;
+  width: 180px;
+  height: 30px;
+  font-size: 20px;
+}
+.send:hover {
+  font-size: 30px;
+  width: 170px;
+  margin: auto;
+  border-radius: 50%;
+  color: aquamarine;
+  transition: 1s;
+  cursor: pointer;
+}
+
+/* ---------- Odpověd' na dopis ----------*/
+
+.reply {
+  display: none;
+  position: absolute;
+  border-radius: 5%;
+  background-image: url(/Kontakt/img/letter.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  width: 80vw;
+  height: 260px;
+}
+
+.envelope {
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
