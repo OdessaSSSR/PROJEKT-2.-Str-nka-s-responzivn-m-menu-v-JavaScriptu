@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Amarante;
+}
+
+body {
+  background: linear-gradient(black, rgb(82, 3, 2));
+}
+body.light-theme {
+  background: linear-gradient(rgb(240, 243, 243), rgb(156, 209, 242));
+}
+
+/*  -------    Pozadi   ------  */
+
+.cage {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+}
+.change {
+  src: url(\images+\lm.jpg);
+}
+/*  -------    Tlacitko obnoveni stranky  ------  */
+
+.reset {
+  position: absolute;
+  text-align: center;
+  top: 9vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  padding-top: 5vh;
+}
+.navrat {
+  width: 25vw;
+  height: 20vh;
+  font-size: 4vh;
+  line-height: 5vh;
+  background: linear-gradient(#f40e0e, rgb(16, 1, 1));
+  border-radius: 50%;
+  padding-top: 1vh;
+  display: none;
+}
+.navrat a {
+  color: rgb(213, 243, 237);
+  text-decoration: none;
+}
+
+/*  -------  Bocni tlacitka - reim a navrat  -----  */
+
+.side-buttons {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 45vh;
+}
+
+.button {
+  font-size: 6vh;
+  border: 8px double white;
+  width: 10vw;
+  border-radius: 20%;
+  background: yellowgreen;
+  cursor: pointer;
+}
+
+.contact {
+  margin-left: 5%;
+}
+
+.return {
+  margin-right: 10%;
+}
+.contact a,
+.return a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact :hover {
+  font-size: 5vh;
+  color: black;
+  transition: 2s;
+}
+
+.return :hover {
+  font-size: 5vh;
+  color: black;
+  transition: 2s;
+}
+
+/*  -------    Reklamni heslo   ------  */
+/*  -------    "Jenom dnes! Poslední kus!"   ------  */
+
+.reklam {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  top: 26vh;
+}
+
+.kus {
+  font-size: 6vh;
+  text-align: center;
+  color: white;
+}
+
+/*  -------    Cisarove novy saty   ------  */
+
+.podvod {
+  position: absolute;
+  width: 100%;
+  height: 43vh;
+  top: 30vh;
+  display: flex;
+  justify-content: center;
+}
+.saty {
+  opacity: 0;
+  width: 45%;
+}
+
+/*  -------    Podminka neviditelnosti   ------  */
+/*  -------    "Šaty, které jsou neviditelné pro člověka hloupého!"    ------  */
+
+.podminka {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  top: 78vh;
+}
+
+.description {
+  color: red;
+  font-size: 4vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*  -------    Nabizena sleva 99%  ------  */
+
+.sleva {
+  position: absolute;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 6vh;
+  background-color: red;
+  border-radius: 50%;
+  right: 22%;
+  height: 15vh;
+  line-height: 15vh;
+}
+
+/*  -------    Tlacitko pro nakup   ------  */
+/*  -------    "Kupte si!"   ------  */
+
+.payment {
+  position: absolute;
+  width: 100%;
+  top: 87vh;
+  display: flex;
+  justify-content: center;
+}
+
+.platba {
+  background-color: aqua;
+  font-weight: bold;
+  font-size: 3vh;
+  color: rgb(218, 11, 11);
+  border-radius: 30%;
+  height: 7vh;
+  width: 15vw;
+}
+
+.platba:hover {
+  background-color: rgb(240, 244, 6);
+  color: rgb(170, 3, 3);
+  font-size: 5vh;
+  border-radius: 50%;
+  height: 12vh;
+  width: 16vw;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}

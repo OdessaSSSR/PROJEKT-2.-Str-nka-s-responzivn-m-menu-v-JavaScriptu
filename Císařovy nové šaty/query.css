@@ -1,0 +1,77 @@
+/*  -------    Pozadi   ------  */
+
+@media (max-width: 876px) {
+  .cage {
+    width: 100%;
+  }
+}
+
+/*  -------    Tlacitko obnoveni stranky  ------  */
+
+@media (max-width: 786px) {
+  .navrat {
+    font-size: 3vh;
+  }
+}
+
+/*  -------  Bocni tlacitka - reim a navrat  -----  */
+
+@media (max-width: 1150px) {
+  .mode {
+    margin-left: 5%;
+  }
+
+  .return {
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .button {
+    font-size: 4vh;
+    width: 15vw;
+  }
+}
+@media (max-width: 450px) {
+  .button {
+    font-size: 3vh;
+    width: 20vw;
+  }
+}
+/*  -------    Reklamni heslo   ------  */
+/*  -------    "Jenom dnes! Poslední kus!"   ------  */
+
+@media (max-width: 868px) {
+  .reklam {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .reklam {
+    width: 80%;
+  }
+}
+
+/*  -------    Cisarove novy saty   ------  */
+
+@media (max-width: 900px) {
+  .saty {
+    width: 60%;
+  }
+}
+
+/*  -------    Podminka neviditelnosti   ------  */
+/*  -------    "Šaty, které jsou neviditelné pro člověka hloupého!"    ------  */
+
+@media (max-width: 1150px) {
+  .podminka {
+    width: 80%;
+  }
+}
+/*  -------    Tlacitko pro nakup   ------  */
+/*  -------    "Kupte si!"   ------  */
+@media (max-width: 360px) {
+  .platba {
+    width: 25vw;
+  }
+}
