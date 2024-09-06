@@ -1,0 +1,142 @@
+/* -------  General -------*/
+@font-face {
+  font-family: "Parry Hotter";
+  src: url("ParryHotter.eot");
+  src: local("Parry Hotter Regular"), local("ParryHotter"),
+    url("ParryHotter.eot?#iefix") format("embedded-opentype"),
+    url("ParryHotter.woff") format("woff"),
+    url("ParryHotter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Harry P, Parry Hotter;
+}
+
+/* ---------  Header ----------  */
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #15304c;
+  height: 70px;
+}
+.logo {
+  flex-grow: 1;
+}
+img {
+  width: 200px;
+  margin-left: 20px;
+}
+
+/* -------- Navigace ---------- */
+
+nav {
+  margin-right: 30px;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+a:hover {
+  font-size: 30px;
+  color: aquamarine;
+  transition: 2s;
+}
+.menu-icon {
+  margin-right: 30px;
+  display: none;
+}
+
+.play {
+  position: inherit;
+  font-size: 20px;
+  color: white;
+  background-color: #15304c;
+  height: 25px;
+  cursor: grab;
+  outline: none;
+  border: none;
+}
+.about-us {
+  position: absolute;
+  bottom: 20px;
+}
+.play:hover {
+  font-size: 30px;
+  color: aquamarine;
+  transition: 2s;
+}
+
+/*  ---------  Sekce Welcome  --------- */
+
+.welcome {
+  background-image: url(img/background.webp);
+  min-height: calc(100vh - 70px);
+  background-size: cover;
+  background-position: center;
+}
+
+.controls {
+  margin-left: 80vw;
+  margin-top: 20vh;
+  background-color: rgb(130, 130, 165);
+  border-radius: 50%;
+  width: 100px;
+  height: 30px;
+  display: none;
+}
+.controls:hover {
+  height: 40px;
+  background-color: red;
+  transition: 2s;
+}
+
+#slides {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  top: 5px;
+  padding: 0px;
+  left: 70vw;
+  list-style-type: none;
+}
+.slide {
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 30px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  top: 0px;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+.picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.name {
+  margin-left: 45px;
+}

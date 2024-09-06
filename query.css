@@ -1,0 +1,52 @@
+@media (max-width: 600px) {
+  header {
+    position: relative;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    margin-top: 70px;
+    width: 30vw;
+    background-color: #15304c;
+    left: 40vw;
+    top: 1px;
+  }
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 25px;
+  }
+  header nav li {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .menu-icon:hover {
+    cursor: grab;
+  }
+}
+
+@media (max-width: 800px) {
+  #slides {
+    left: 55vw;
+  }
+}
+@media (max-width: 500px) {
+  #slides {
+    left: 40vw;
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 600px) {
+  header nav {
+    display: block !important;
+  }
+  a:hover {
+    font-size: 30px;
+    color: aquamarine;
+    transition: 2s;
+  }
+}
